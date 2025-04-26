@@ -31,7 +31,7 @@ void VM::LoadROMFromFile(const std::string& romPath) {
 
     // We start writing the ROM data after 0x200(where the Program Counter starts).
     for (std::size_t idx = 0; idx < romBufferLen; idx++) {
-        m_memory.Write(idx + PROCESSOR_INTERNAL_PROGRAM_COUNTER, romBuffer[idx]);
+        m_memory.Write(idx + PROCESSOR_INTERNAL_PROGRAM_COUNTER_START, romBuffer[idx]);
     }
 }
 

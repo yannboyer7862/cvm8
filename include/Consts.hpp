@@ -11,6 +11,6 @@ static constexpr uint32_t WINDOW_HEIGHT = CHIP8_SCREEN_HEIGHT * PIXEL_SCALE_FACT
 static constexpr uint16_t CPU_CLOCK_DELAY = 1000; // 1000 microseconds, 1ms.
 static constexpr uint8_t TIMER_CLOCK_DIVISION = 9;
 // Processor's PC starts at 0x200.
-static constexpr uint16_t PROCESSOR_INTERNAL_PROGRAM_COUNTER = 0x200;
+static constexpr uint16_t PROCESSOR_INTERNAL_PROGRAM_COUNTER_START = 0x200;
 
 #endif

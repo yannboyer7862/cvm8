@@ -12,7 +12,7 @@ VirtualCPU::VirtualCPU() {
     m_delayTimer = 0x0;
     m_soundTimer = 0x0;
 
-    m_programCounter = PROCESSOR_INTERNAL_PROGRAM_COUNTER;
+    m_programCounter = PROCESSOR_INTERNAL_PROGRAM_COUNTER_START;
 }
 
 void VirtualCPU::UpdateTimers(AudioPlayer& audioPlayer) {
