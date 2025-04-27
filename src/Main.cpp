@@ -3,7 +3,11 @@
 #include <string>
 #include <thread>
 #include <chrono>
+#ifdef SDL2_FROM_HOMEBREW
+#include <SDL.h>
+#else
 #include <SDL2/SDL.h>
+#endif
 #include "Consts.hpp"
 #include "VM.hpp"
 

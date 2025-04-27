@@ -24,13 +24,14 @@ void VirtualCPU::UpdateTimers(AudioPlayer& audioPlayer) {
          * Maybe too much, try/catch can be very CPU cycles hungry.
          * May have a performance hit, is it noticeable tho ?
         */
-        if (m_soundTimer == 1)
+        if (m_soundTimer == 1) {
             try {
                 audioPlayer.PlayBeepSound();
             } catch (std::exception& e) {
                 std::cerr << e.what() << "\n";
                 std::exit(1);
             }
+        }
     }
 }
 

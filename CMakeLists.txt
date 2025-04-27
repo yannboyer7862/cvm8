@@ -24,3 +24,7 @@ if (NATIVE_INSTRUCTIONS)
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -march=native")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
 endif()
+
+if (SDL2_FROM_HOMEBREW)
+	add_compile_definitions(-DSDL2_FROM_HOMEBREW)
+endif()
